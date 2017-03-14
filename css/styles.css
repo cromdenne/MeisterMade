@@ -3,11 +3,18 @@
 /*===========================================================================*/
 body {
 	background-color: #ffffff;
+	font-family: 'Muli', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {  }
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Give You Glory', cursive;
+}
 
 a {  }
+
+.section-title {
+	margin: 25px 0;
+}
 
 .text-light {
 	color: #eeeeee;
