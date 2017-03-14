@@ -75,5 +75,13 @@ a {  }
 /*===========================================================================*/
 #anchor {
 	background-color: #ffffff;
-	min-height: 100px;
+}
+
+#anchor-icon {
+	width: 50px;
+	padding: 25px 0;
+} @media (max-width: 768px) {
+	#anchor-icon {
+		width: 30px;
+	}
 }
