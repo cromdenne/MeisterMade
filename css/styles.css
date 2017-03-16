@@ -2,7 +2,7 @@
 /*  BOOTSTRAP OVERRIDES                                                      */
 /*===========================================================================*/
 body {
-	background-color: #ffffff;
+	background-color: #4d439b;
 	font-family: 'Muli', sans-serif;
 }
 
@@ -64,13 +64,76 @@ a {  }
 /*===========================================================================*/
 /*  HEADER				                                                     */
 /*===========================================================================*/
+.hvr-sweep {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	position: relative;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+}
+
+.hvr-sweep:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-transform: scaleY(0);
+	transform: scaleY(0);
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.hvr-bg-pink:before,
+.hvr-bg-purple:before {
+	background: #ffffff;
+}
+
+.hvr-bg-white:before {
+	background: #4d439b;
+}
+
+.hvr-bg-purple:hover, .hvr-bg-purple:focus, .hvr-bg-purple:active {
+	color: #4d439b;
+}
+
+.hvr-bg-pink:hover, .hvr-bg-pink:focus, .hvr-bg-pink:active {
+	color: #f185af;
+}
+
+.hvr-bg-white:hover, .hvr-bg-white:focus, .hvr-bg-white:active {
+	color: #ffffff;
+}
+
+.hvr-sweep:hover:before, .hvr-sweep:focus:before, .hvr-sweep:active:before {
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1);
+}
+
+/*===========================================================================*/
+/*  HEADER				                                                     */
+/*===========================================================================*/
 #header {
-	background-color: #4d439b;
+	position: relative;
+	z-index: 1;
 	background-image: url("/images/header-bg.png");
 	background-size: 65px;
 	background-repeat: repeat-x;
 	background-position: left top;
-	min-height: 250px;
+	min-height: 202px;
 }
 
 #header-logo {
@@ -79,6 +142,38 @@ a {  }
 	margin-left: -90px;
 	top: 5px;
 	left: 50%;
+}
+
+/*===========================================================================*/
+/*  NAVIGATION				                                                 */
+/*===========================================================================*/
+#navmain {
+	position: relative;
+	z-index: 0;
+	background-color: #4d439b;
+	height: 50px;
+	padding: 15px 0px;
+	text-align: center;
+}
+
+.navlink {
+	margin-left: -3px;
+	padding: 25px 15px 16px 15px;
+	color: #eeeeee;
+	transition: all 300ms;
+}
+
+.navlink:hover,
+.navlink:active,
+.navlink:focus {
+	color: #eeeeee;
+	background-color: #3ed2cd;
+	text-decoration: none;
+	transition: all 300ms;
+}
+
+.navlink-active {
+	background-color: #3ed2cd;
 }
 
 /*===========================================================================*/
@@ -91,6 +186,7 @@ a {  }
 /*===========================================================================*/
 #story {
 	background-color: #4d439b;
+	color: #eeeeee;
 }
 
 #story-image {
@@ -157,6 +253,7 @@ a {  }
 /*===========================================================================*/
 #new {
 	background-color: #f185af;
+	color: #eeeeee;
 }
 
 #new-image {
