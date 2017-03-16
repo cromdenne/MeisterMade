@@ -38,6 +38,29 @@ a {  }
 	border-width: 3px;
 }
 
+.btn-light, .btn-purple {
+	background-color: transparent;
+	border: 2px solid;
+	border-radius: 0px;
+	padding: 5px 0;
+	width: 100%;
+	font-size: 14px;
+}
+
+.btn-light {
+	border-color: #ffffff;
+	color: #ffffff;
+}
+
+.btn-purple {
+	border-color: #4d439b;
+	color: #4d439b;
+}
+
+.btn-lg {
+	padding: 20px 0;
+}
+
 /*===========================================================================*/
 /*  HEADER				                                                     */
 /*===========================================================================*/
@@ -93,6 +116,40 @@ a {  }
 /*===========================================================================*/
 #projects {
 	background-color: #ffffff;
+	padding: 25px 15px;
+}
+
+.project-card {
+	background-color: #4d439b;
+	margin-bottom: 30px;
+	padding: 10px;
+	color: #ffffff;
+	text-align: left;
+}
+
+.project-img {
+	margin: -10px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
+	height: 400px;
+}
+
+#project-ft1 {
+	background-image: url("/images/fox.jpg");
+}
+
+#project-ft2 {
+	background-image: url("/images/sleeve.jpg");
+	background-position: center;
+}
+
+#project-ft3 {
+	background-image: url("/images/giraffe.jpg");
+}
+
+#projects-action {
+	margin: 0px;
 }
 
 /*===========================================================================*/
@@ -112,7 +169,7 @@ a {  }
 	margin-bottom: 25px;
 } @media (min-width: 768px) {
 	#new-image {
-		min-height: 460px;
+		min-height: 475px;
 	}
 } @media (min-width: 992px) {
 	#new-image {
