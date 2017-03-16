@@ -70,6 +70,24 @@ a {  }
 	background-color: #4d439b;
 }
 
+#story-image {
+	background-image: url("/images/yarn.jpg");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
+	min-height: 300px;
+	margin-top: 25px;
+	margin-bottom: -25px;
+} @media (min-width: 768px) {
+	#story-image {
+		min-height: 460px;
+	}
+} @media (min-width: 992px) {
+	#story-image {
+		margin-top: -25px;
+	}
+}
+
 /*===========================================================================*/
 /*  PROJECTS				                                                 */
 /*===========================================================================*/
@@ -84,6 +102,24 @@ a {  }
 	background-color: #f185af;
 }
 
+#new-image {
+	background-image: url("/images/mini-bear.jpg");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
+	min-height: 350px;
+	margin-top: -25px;
+	margin-bottom: 25px;
+} @media (min-width: 768px) {
+	#new-image {
+		min-height: 460px;
+	}
+} @media (min-width: 992px) {
+	#new-image {
+		margin-bottom: -25px;
+	}
+}
+
 /*===========================================================================*/
 /*  FOOTER 						                                             */
 /*===========================================================================*/
@@ -93,6 +129,12 @@ a {  }
     background: -o-linear-gradient(#9fdae5, #8678b8); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#9fdae5, #8678b8); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#9fdae5, #8678b8); /* Standard syntax */
+}
+
+.social {
+	padding: 0 15px;
+	font-size: 42px;
+	color: #ffffff;
 }
 
 /*===========================================================================*/
