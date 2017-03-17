@@ -45,6 +45,12 @@ a {  }
 	padding: 5px 0;
 	width: 100%;
 	font-size: 14px;
+	text-align: center;
+}
+
+.btn-light:hover, .btn-light:active, .btn-light:focus,
+.btn-purple:hover, .btn-purple:active, .btn-purple:focus {
+	text-decoration: none;
 }
 
 .btn-light {
@@ -62,7 +68,7 @@ a {  }
 }
 
 /*===========================================================================*/
-/*  HEADER				                                                     */
+/*  HOVER EFFECTS				                                             */
 /*===========================================================================*/
 .hvr-sweep {
 	display: inline-block;
@@ -123,6 +129,36 @@ a {  }
 	transform: scaleY(1);
 }
 
+.hvr-underline,
+.hvr-underline:hover,
+.hvr-underline:active,
+.hvr-underline:visited {
+	position: relative;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.hvr-underline:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.hvr-underline:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 /*===========================================================================*/
 /*  HEADER				                                                     */
 /*===========================================================================*/
@@ -160,7 +196,7 @@ a {  }
 	margin-left: -3px;
 	padding: 25px 15px 16px 15px;
 	color: #eeeeee;
-	transition: all 300ms;
+	transition: all 200ms;
 }
 
 .navlink:hover,
@@ -169,7 +205,7 @@ a {  }
 	color: #eeeeee;
 	background-color: #3ed2cd;
 	text-decoration: none;
-	transition: all 300ms;
+	transition: all 200ms;
 }
 
 .navlink-active {
@@ -285,10 +321,18 @@ a {  }
     background: linear-gradient(#9fdae5, #8678b8); /* Standard syntax */
 }
 
-.social {
+.social,
+.social:visited {
 	padding: 0 15px;
 	font-size: 42px;
 	color: #ffffff;
+	transition: 200ms all;
+}
+
+.social:hover,
+.social:active {
+	color: #9fdae5;
+	transition: 200ms all;
 }
 
 /*===========================================================================*/
